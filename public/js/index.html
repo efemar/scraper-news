@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" id="home-page-lang">
+  <head>
+    <title>Mongo Scraper</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+
+  <body>
+
+<nav>
+        <div class="nav-wrapper teal darken-4">
+          <a href="#" class="brand-logo center">Mongo Scraper</a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="/">Home</a></li>
+            <li><a href="/saved">Saved Articles</a></li>
+            <li><a href="/scrape" class="waves-effect waves-light btn" id="scrape">Scrape News</a></li>
+            <li><a href="/clear" class="waves-effect waves-light red darken-2 btn" id="clear">Clear</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="jumbotron text-center ">
+      <div class="overlay"></div>
+      <div class="background-image"></div>
+    </div>
+    <div class="container-fluid article-container container" id="articles">
+      <!-- <div data-_id="_id" class="card">
+        <div class="card-header">
+          <h4 class="center">
+            <a
+              class="article-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="{{ link }}"
+              >{{ title }}</a
+            >
+            <a data-_id="{{_id}}" class="btn btn-success save btn-small" id="save-article">Save Article</a>
+          </h4>
+        </div>
+         <div class="card-body">
+          {{ summary }}
+        </div>
+        {{/each}} -->
+
+
+        <footer class="footer">
+          <div class="container">
+            <p>New York Times Mongo Scraper</p>
+          </div>
+        </footer>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Compiled and minified CSS -->
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        />
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+        <!-- <script src="/assets/javascript/index.js"></script> -->
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script src="/js/app.js"></script>
+      </body>
+    </html>

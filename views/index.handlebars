@@ -16,17 +16,17 @@
     </div>
     <div class="container-fluid article-container container" id="articles">
       {{#each articles}}
-      <div data-_id="{{_id}}" class="card">
+      <div data-id="{{_id}}" class="card">
         <div class="card-header">
           <h4 class="center">
             <a
               class="article-link"
               target="_blank"
               rel="noopener noreferrer"
-              href="{{ link }}"
+              href="{{link}}"
               >{{ title }}</a
             >
-            <a data-_id="{{_id}}" class="btn btn-success save btn-small" id="save-article">Save Article</a>
+            <a data-id="{{_id}}" class="btn btn-success save btn-small" id="save-article">Save Article</a>
           </h4>
         </div>
          <div class="card-body">

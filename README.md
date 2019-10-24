@@ -8,6 +8,8 @@ The user has the ability to save their favorite articles and to write comments o
 ## How the app is organized
 The app has 2 pages, where the home page is a list of the top 20 articles with their title, link and a summary of the article. The other page is a saved-article page where the user has the ability to write comments to the article
 
+<img src="/public/images/home-page.png">
+
 ## How to use this app
 
 1) Click on scrape article button to scrape the articles from 'https://www.npr.org/sections/news/' website
