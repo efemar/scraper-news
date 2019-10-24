@@ -1,18 +1,18 @@
 // Grab the articles as a json
-$.getJSON("/articles", function(data) {
-  // For each one
-  for (var i = 0; i < data.length; i++) {
-    // Display the apropos information on the page
-    //$("#articles").append("<p data-id='" + data[i]._id + "'>" + data[i].title + "<br />" + data[i].link + "</p>");
-    $("#articles").append("<p data-id='" + data[i]._id + "class='card'>")
-    $("#articles").append("<div class='card-header'>")
-    $("#articles").append("<h4 class='center'>")
-    $("#articles").append("<a class='article-link' target='_blank' rel='noopener noreferrer href='" + data[i].link + ">" + data[i].title + "</a>")
-    $("#articles").append("<a class='btn btn-success save btn-small' id='save-article'>Save Article</a>")
-    $("#articles").append("</h4>")
-    $("#articles").append("</div>")
-  }
-});
+// $.getJSON("/articles", function(data) {
+//   // For each one
+//   for (var i = 0; i < data.length; i++) {
+//     // Display the apropos information on the page
+//     //$("#articles").append("<p data-id='" + data[i]._id + "'>" + data[i].title + "<br />" + data[i].link + "</p>");
+//     $("#articles").append("<p data-id='" + data[i]._id + "class='card'>")
+//     $("#articles").append("<div class='card-header'>")
+//     $("#articles").append("<h4 class='center'>")
+//     $("#articles").append("<a class='article-link' target='_blank' rel='noopener noreferrer href='" + data[i].link + ">" + data[i].title + "</a>")
+//     $("#articles").append("<a class='btn btn-success save btn-small' id='save-article'>Save Article</a>")
+//     $("#articles").append("</h4>")
+//     $("#articles").append("</div>")
+//   }
+// });
 
 // Whenever someone clicks a p tag
 $(document).on("click", "#article-notes", function() {

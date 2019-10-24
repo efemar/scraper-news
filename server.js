@@ -8,15 +8,15 @@ var mongoose = require("mongoose");
 // Require all models
 var db = require("./models");
 
-var PORT = 3000;
-// var PORT = process.env.PORT || 3000;
+// var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 
 // Connect to the Mongo DB
-// mongoose.connect("mongodb://localhost/scraper-news", { useNewUrlParser: true });
-// var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/unit18Populater";
-// mongoose.connect(MONGODB_URI)
 
-mongoose.connect("mongodb://localhost/scraper-news", { useNewUrlParser: true });
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/scraper-news";
+mongoose.connect(MONGODB_URI)
+
+// mongoose.connect("mongodb://localhost/scraper-news", { useNewUrlParser: true });
 
 // Initialize Express
 var app = express();
@@ -64,7 +64,6 @@ app.set('view engine', 'handlebars')
 
   app.get('/', (req, res) => {
     db.Article.find()
-      .limit(20)
       .then(dbArticles => res.render("index", { articles : dbArticles }))
       .catch(error => res.status(500).json(error))
   })
