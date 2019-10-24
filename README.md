@@ -1,37 +1,25 @@
-## Welcome to GitHub Pages
+## Scrape-News
 
-You can use the [editor on GitHub](https://github.com/efemar/scraper-news/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Overview of how this app works and why it was built
+This app was built to scrape a news site where the top 20 articles are listed on the home page
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The user has the ability to save their favorite articles and to write comments on each one of them
 
-### Markdown
+## How the app is organized
+The app has 2 pages, where the home page is a list of the top 20 articles with their title, link and a summary of the article. The other page is a saved-article page where the user has the ability to write comments to the article
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## How to use this app
 
-```markdown
-Syntax highlighted code block
+1) Click on scrape article button to scrape the articles from 'https://www.npr.org/sections/news/' website
+2) Go through the list of article to decide which one is the favorite.
+3) Click on the saved article link and all of the saved articles will be listed.
+4) Select which article you want to leave a comment on.
 
-# Header 1
-## Header 2
-### Header 3
+## Link to the deployed version of the app
+ https://intense-cliffs-35635.herokuapp.com/
 
-- Bulleted
-- List
+## Technologies used in the App
+This app was built using Node.JS, Express, Express-Handlebars, Cheerio, MongoDB, Mongoose, Axios
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/efemar/scraper-news/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Contributor
+This app was built by Elisa Marques, github: https://github.com/efemar?tab=repositories
