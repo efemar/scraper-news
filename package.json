@@ -15,5 +15,15 @@
   "bugs": {
     "url": "https://github.com/efemar/scraper-news/issues"
   },
-  "homepage": "https://github.com/efemar/scraper-news#readme"
+  "homepage": "https://github.com/efemar/scraper-news#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "handlebars": "^4.4.5",
+    "logger": "0.0.1",
+    "mongojs": "^3.0.0",
+    "mongoose": "^5.7.6"
+  }
 }
